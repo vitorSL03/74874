@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- Traduzido para português e otimizado viewport para mobile -->
+    <title>La Couronne Royale - Experiência Gastronômica de Excelência</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="crown-icon">♔</span>
+                <span class="logo-text">La Couronne Royale</span>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-menu" id="navMenu">
+                <!-- Links traduzidos para português -->
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#menu" class="nav-link">Cardápio</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#contact" class="nav-link">Contato</a>
+                <a href="#order" class="nav-btn">Peça Agora</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-crown">♔</div>
+            <!-- Títulos e subtítulos traduzidos -->
+            <h1 class="hero-title">
+                <span class="hero-title-line">Experimente</span>
+                <span class="hero-title-line hero-title-main">Gastronomia Real</span>
+            </h1>
+            <p class="hero-subtitle">Onde cada prato é uma obra-prima, criado para aqueles que apreciam o melhor da vida</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Explorar Cardápio</a>
+                <a href="#contact" class="btn btn-secondary">Reservar Mesa</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Role para descobrir</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image-wrapper">
+                    <!-- Imagem de restaurante elegante -->
+                    <div class="about-image" style="background-image: url('/placeholder.svg?height=600&width=500')"></div>
+                </div>
+                <div class="about-text">
+                    <span class="section-label">Nossa História</span>
+                    <h2 class="section-title">Um Legado de <span class="text-accent">Excelência</span></h2>
+                    <p class="about-description">
+                        Há mais de três décadas, La Couronne Royale é o ápice da alta gastronomia, 
+                        onde a arte culinária encontra um serviço impecável. Nossos chefs mestres 
+                        criam cada prato com paixão, usando apenas os melhores ingredientes 
+                        selecionados ao redor do mundo.
+                    </p>
+                    <p class="about-description">
+                        Entre em nosso mundo de elegância refinada, onde cada detalhe é projetado 
+                        para transportá-lo a um reino de luxo e sofisticação. Sua mesa aguarda.
+                    </p>
+                    <div class="about-signature">
+                        <span class="signature-text">Chef Alexandre Beaumont</span>
+                        <span class="signature-title">Chef Executivo</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section class="menu" id="menu">
+        <div class="container">
+            <div class="menu-header">
+                <span class="section-label">Nossas Ofertas</span>
+                <h2 class="section-title">Cardápio <span class="text-accent">Requintado</span></h2>
+                <p class="menu-intro">Delicie-se com nossa seleção cuidadosamente elaborada de obras-primas culinárias</p>
+            </div>
+
+            <!-- Category Filter -->
+            <!-- Filtros traduzidos -->
+            <div class="menu-filters">
+                <button class="filter-btn active" data-category="all">Todos</button>
+                <button class="filter-btn" data-category="pasta">Massas</button>
+                <button class="filter-btn" data-category="drinks">Bebidas</button>
+                <button class="filter-btn" data-category="desserts">Sobremesas</button>
+                <button class="filter-btn" data-category="combos">Combos</button>
+            </div>
+
+            <!-- Menu Grid -->
+            <div class="menu-grid" id="menuGrid">
+                <!-- Pasta Items -->
+                <!-- Cards de massas com imagens reais e conteúdo traduzido -->
+                <div class="menu-card" data-category="pasta">
+                    <div class="menu-card-image" style="background-image: url('/placeholder.svg?height=400&width=400')">
+                        <div class="menu-card-badge">Escolha do Chef</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Tagliatelle de Trufas</h3>
+                            <span class="menu-card-price">R$ 248</span>
+                        </div>
+                        <p class="menu-card-description">
+                            Fitas de massa feitas à mão envoltas em um luxuoso molho cremoso de trufas negras
+                        </p>
+                        <div class="menu-card-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Ingredientes:</span>
+                                <span class="detail-text">Massa fresca, Trufa negra, Parmigiano-Reggiano, Creme de leite, Manteiga</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Acompanha:</span>
+                                <span class="detail-text">Lâminas de trufa, Microverdes, Crostini de alho</span>
+                            </div>
+                        </div>
+                        <div class="menu-card-payment">
+                            <span class="payment-label">Formas de Pagamento:</span>
+                            <div class="payment-icons">
+                                <span class="payment-icon">💳 Crédito</span>
+                                <span class="payment-icon">💳 Débito</span>
+                                <span class="payment-icon">📱 Pix</span>
+                            </div>
+                        </div>
+                        <button class="menu-card-btn">Pedir Agora</button>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="pasta">
+                    <div class="menu-card-image" style="background-image: url('/placeholder.svg?height=400&width=400')">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Linguine de Lagosta</h3>
+                            <span class="menu-card-price">R$ 335</span>
+                        </div>
+                        <p class="menu-card-description">
+                            Lagosta fresca do Maine com linguine em delicado molho de açafrão e manteiga
+                        </p>
+                        <div class="menu-card-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Ingredientes:</span>
+                                <span class="detail-text">Lagosta Maine, Linguine, Açafrão, Vinho branco, Manteiga, Tomate cereja</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Acompanha:</span>
+                                <span class="detail-text">Aspargos grelhados, Limão siciliano, Ervas frescas</span>
+                            </div>
+                        </div>
+                        <div class="menu-card-payment">
+                            <span class="payment-label">Formas de Pagamento:</span>
+                            <div class="payment-icons">
+                                <span class="payment-icon">💳 Crédito</span>
+                                <span class="payment-icon">💳 Débito</span>
+                                <span class="payment-icon">📱 Pix</span>
+                            </div>
+                        </div>
+                        <button class="menu-card-btn">Pedir Agora</button>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="pasta">
+                    <div class="menu-card-image" style="background-image: url('/placeholder.svg?height=400&width=400')">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Carbonara Royale</h3>
+                            <span class="menu-card-price">R$ 218</span>
+                        </div>
+                        <p class="menu-card-description">
+                            Carbonara tradicional romana elevada com guanciale e pecorino envelhecido
+                        </p>
+                        <div class="menu-card-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Ingredientes:</span>
+                                <span class="detail-text">Massa fresca de ovos, Guanciale, Pecorino Romano, Ovos caipiras, Pimenta preta</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Acompanha:</span>
+                                <span class="detail-text">Pecorino extra, Pimenta moída, Pão artesanal</span>
+                            </div>
+                        </div>
+                        <div class="menu-card-payment">
+                            <span class="payment-label">Formas de Pagamento:</span>
+                            <div class="payment-icons">
+                                <span class="payment-icon">💳 Crédito</span>
+                                <span class="payment-icon">💳 Débito</span>
+                                <span class="payment-icon">📱 Pix</span>
+                            </div>
+                        </div>
+                        <button class="menu-card-btn">Pedir Agora</button>
+                    </div>
+                </div>
+
+                <!-- Drinks -->
+                <!-- Cards de bebidas com imagens reais e conteúdo traduzido -->
+                <div class="menu-card" data-category="drinks">
+                    <div class="menu-card-image" style="background-image: url('/placeholder.svg?height=400&width=400')">
+                        <div class="menu-card-badge">Assinatura</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Elixir Dourado</h3>
+                            <span class="menu-card-price">R$ 145</span>
+                        </div>
+                        <p class="menu-card-description">
+                            Uma mistura sofisticada de vodka premium, champanhe e ouro comestível
+                        </p>
+                        <div class="menu-card-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Ingredientes:</span>
+                                <span class="detail-text">Vodka Grey Goose, Dom Pérignon, Flor de sabugueiro, Folha de ouro, Twist de limão</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Acompanha:</span>
+                                <span class="detail-text">Esfera de gelo, Taça com borda dourada, Caviar de acompanhamento</span>
+                            </div>
+                        </div>
+                        <div class="menu-card-payment">
+                            <span class="payment-label">Formas de Pagamento:</span>
+                            <div class="payment-icons">
+                                <span class="payment-icon">💳 Crédito</span>
+                                <span class="payment-icon">💳 Débito</span>
+                                <span class="payment-icon">📱 Pix</span>
+                            </div>
+                        </div>
+                        <button class="menu-card-btn">Pedir Agora</button>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="drinks">
+                    <div class="menu-card-image" style="background-image: url('/placeholder.svg?height=400&width=400')">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Château Reserva 2015</h3>
+                            <span class="menu-card-price">R$ 930</span>
+                        </div>
+                        <p class="menu-card-description">
+                            Excepcional Bordeaux com notas de groselha negra, carvalho e chocolate amargo
+                        </p>
+                        <div class="menu-card-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Ingredientes:</span>
+                                <span class="detail-text">Cabernet Sauvignon, Merlot, Cabernet Franc das vinhas de Bordeaux</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Acompanha:</span>
+                                <span class="detail-text">Decanter de cristal, Serviço de sommelier profissional, Harmonização de queijos</span>
+                            </div>
+                        </div>
+                        <div class="menu-card-payment">
+                            <span class="payment-label">Formas de Pagamento:</span>
+                            <div class="payment-icons">
+                                <span class="payment-icon">💳 Crédito</span>
+                                <span class="payment-icon">💳 Débito</span>
+                                <span class="payment-icon">📱 Pix</span>
+                            </div>
+                        </div>
+                        <button class="menu-card-btn">Pedir Agora</button>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="drinks">
+                    <div class="menu-card-image" style="background-image: url('/placeholder.svg?height=400&width=400')">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Espresso Martini Real</h3>
+                            <span class="menu-card-price">R$ 115</span>
+                        </div>
+                        <p class="menu-card-description">
+                            Rico espresso martini com vodka premium e licor de café
+                        </p>
+                        <div class="menu-card-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Ingredientes:</span>
+                                <span class="detail-text">Vodka premium, Espresso fresco, Kahlúa, Xarope de baunilha, Grãos de café</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Acompanha:</span>
+                                <span class="detail-text">Taça martini gelada, Grãos de café de decoração, Chocolate amargo</span>
+                            </div>
+                        </div>
+                        <div class="menu-card-payment">
+                            <span class="payment-label">Formas de Pagamento:</span>
+                            <div class="payment-icons">
+                                <span class="payment-icon">💳 Crédito</span>
+                                <span class="payment-icon">💳 Débito</span>
+                                <span class="payment-icon">📱 Pix</span>
+                            </div>
+                        </div>
+                        <button class="menu-card-btn">Pedir Agora</button>
+                    </div>
+                </div>
+
+                <!-- Desserts -->
+                <!-- Cards de sobremesas com imagens reais e conteúdo traduzido -->
+                <div class="menu-card" data-category="desserts">
+                    <div class="menu-card-image" style="background-image: url('/placeholder.svg?height=400&width=400')">
+                        <div class="menu-card-badge">Mais Popular</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Decadência Dourada</h3>
+                            <span class="menu-card-price">R$ 165</span>
+                        </div>
+                        <p class="menu-card-description">
+                            Mousse de chocolate amargo em camadas com folha de ouro e praline de avelã
+                        </p>
+                        <div class="menu-card-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Ingredientes:</span>
+                                <span class="detail-text">Chocolate Valrhona, Folha de ouro, Avelãs, Fava de baunilha, Creme fresco</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Acompanha:</span>
+                                <span class="detail-text">Coulis de framboesa, Flores comestíveis, Sorvete de baunilha</span>
+                            </div>
+                        </div>
+                        <div class="menu-card-payment">
+                            <span class="payment-label">Formas de Pagamento:</span>
+                            <div class="payment-icons">
+                                <span class="payment-icon">💳 Crédito</span>
+                                <span class="payment-icon">💳 Débito</span>
+                                <span class="payment-icon">📱 Pix</span>
+                            </div>
+                        </div>
+                        <button class="menu-card-btn">Pedir Agora</button>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="desserts">
+                    <div class="menu-card-image" style="background-image: url('/placeholder.svg?height=400&width=400')">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Tiramisu Royale</h3>
+                            <span class="menu-card-price">R$ 135</span>
+                        </div>
+                        <p class="menu-card-description">
+                            Tiramisu italiano clássico com mascarpone e biscoitos embebidos em espresso
+                        </p>
+                        <div class="menu-card-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Ingredientes:</span>
+                                <span class="detail-text">Mascarpone, Espresso, Biscoitos champagne, Vinho Marsala, Cacau em pó</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Acompanha:</span>
+                                <span class="detail-text">Cacau belga, Amaretto, Biscoitos artesanais</span>
+                            </div>
+                        </div>
+                        <div class="menu-card-payment">
+                            <span class="payment-label">Formas de Pagamento:</span>
+                            <div class="payment-icons">
+                                <span class="payment-icon">💳 Crédito</span>
+                                <span class="payment-icon">💳 Débito</span>
+                                <span class="payment-icon">📱 Pix</span>
+                            </div>
+                        </div>
+                        <button class="menu-card-btn">Pedir Agora</button>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="desserts">
+                    <div class="menu-card-image" style="background-image: url('/placeholder.svg?height=400&width=400')">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Crème Brûlée Imperial</h3>
+                            <span class="menu-card-price">R$ 125</span>
+                        </div>
+                        <p class="menu-card-description">
+                            Clássico francês com creme de baunilha aveludado e crosta de açúcar caramelizado
+                        </p>
+                        <div class="menu-card-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Ingredientes:</span>
+                                <span class="detail-text">Creme de leite, Favas de baunilha Bourbon, Gemas, Açúcar demerara</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Acompanha:</span>
+                                <span class="detail-text">Frutas vermelhas frescas, Biscoitos franceses, Hortelã</span>
+                            </div>
+                        </div>
+                        <div class="menu-card-payment">
+                            <span class="payment-label">Formas de Pagamento:</span>
+                            <div class="payment-icons">
+                                <span class="payment-icon">💳 Crédito</span>
+                                <span class="payment-icon">💳 Débito</span>
+                                <span class="payment-icon">📱 Pix</span>
+                            </div>
+                        </div>
+                        <button class="menu-card-btn">Pedir Agora</button>
+                    </div>
+                </div>
+
+                <!-- Combos -->
+                <!-- Cards de combos com imagens reais e conteúdo traduzido -->
+                <div class="menu-card" data-category="combos">
+                    <div class="menu-card-image" style="background-image: url('/placeholder.svg?height=400&width=400')">
+                        <div class="menu-card-badge">Experiência Completa</div>
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Degustação Real</h3>
+                            <span class="menu-card-price">R$ 485</span>
+                        </div>
+                        <p class="menu-card-description">
+                            Menu degustação de 5 pratos com harmonização de vinhos selecionados
+                        </p>
+                        <div class="menu-card-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Inclui:</span>
+                                <span class="detail-text">Entrada, Sopa, Massa, Prato principal, Sobremesa</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Acompanha:</span>
+                                <span class="detail-text">5 taças de vinhos premium, Pão artesanal, Café gourmet</span>
+                            </div>
+                        </div>
+                        <div class="menu-card-payment">
+                            <span class="payment-label">Formas de Pagamento:</span>
+                            <div class="payment-icons">
+                                <span class="payment-icon">💳 Crédito</span>
+                                <span class="payment-icon">💳 Débito</span>
+                                <span class="payment-icon">📱 Pix</span>
+                            </div>
+                        </div>
+                        <button class="menu-card-btn">Pedir Agora</button>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="combos">
+                    <div class="menu-card-image" style="background-image: url('/placeholder.svg?height=400&width=400')">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Romance a Dois</h3>
+                            <span class="menu-card-price">R$ 650</span>
+                        </div>
+                        <p class="menu-card-description">
+                            Jantar romântico para dois com champanhe e menu especial
+                        </p>
+                        <div class="menu-card-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Inclui:</span>
+                                <span class="detail-text">2 entradas, 2 pratos principais, 2 sobremesas, Champanhe premium</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Acompanha:</span>
+                                <span class="detail-text">Decoração de mesa romântica, Música ao vivo, Velas aromáticas</span>
+                            </div>
+                        </div>
+                        <div class="menu-card-payment">
+                            <span class="payment-label">Formas de Pagamento:</span>
+                            <div class="payment-icons">
+                                <span class="payment-icon">💳 Crédito</span>
+                                <span class="payment-icon">💳 Débito</span>
+                                <span class="payment-icon">📱 Pix</span>
+                            </div>
+                        </div>
+                        <button class="menu-card-btn">Pedir Agora</button>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="combos">
+                    <div class="menu-card-image" style="background-image: url('/placeholder.svg?height=400&width=400')">
+                    </div>
+                    <div class="menu-card-content">
+                        <div class="menu-card-header">
+                            <h3 class="menu-card-title">Almoço Executivo</h3>
+                            <span class="menu-card-price">R$ 185</span>
+                        </div>
+                        <p class="menu-card-description">
+                            Menu executivo completo ideal para almoços de negócios
+                        </p>
+                        <div class="menu-card-details">
+                            <div class="detail-item">
+                                <span class="detail-label">Inclui:</span>
+                                <span class="detail-text">Entrada, Prato principal à escolha, Sobremesa, Bebida</span>
+                            </div>
+                            <div class="detail-item">
+                                <span class="detail-label">Acompanha:</span>
+                                <span class="detail-text">Salada, Pão, Café expresso, Água mineral</span>
+                            </div>
+                        </div>
+                        <div class="menu-card-payment">
+                            <span class="payment-label">Formas de Pagamento:</span>
+                            <div class="payment-icons">
+                                <span class="payment-icon">💳 Crédito</span>
+                                <span class="payment-icon">💳 Débito</span>
+                                <span class="payment-icon">📱 Pix</span>
+                            </div>
+                        </div>
+                        <button class="menu-card-btn">Pedir Agora</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-header">
+                <span class="section-label">Entre em Contato</span>
+                <h2 class="section-title">Reserve Sua <span class="text-accent">Experiência</span></h2>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-text">
+                                <h4>Localização</h4>
+                                <p>Av. Paulista, 1578<br>Bela Vista, São Paulo - SP<br>CEP: 01310-200</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-text">
+                                <h4>Telefone</h4>
+                                <p>(11) 3456-7890<br>(11) 98765-4321<br>Segunda a Sábado: 12h - 23h</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>reservas@lacouronneroyale.com.br<br>contato@lacouronneroyale.com.br<br>Resposta em até 24h</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <h3>Faça Sua Reserva</h3>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" placeholder="Seu Nome" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="Seu Email" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="tel" placeholder="Telefone" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="number" placeholder="Número de Pessoas" min="1" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="date" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="time" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Observações especiais (opcional)" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Confirmar Reserva</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="crown-icon">♔</span>
+                        <span>La Couronne Royale</span>
+                    </div>
+                    <p class="footer-tagline">
+                        Experiência gastronômica de excelência desde 1990. 
+                        Onde cada refeição é uma celebração da alta culinária.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="WhatsApp">💬</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#menu">Cardápio</a></li>
+                        <li><a href="#about">Sobre Nós</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Horário de Funcionamento</h4>
+                    <p>Segunda a Quinta: 12h - 23h</p>
+                    <p>Sexta e Sábado: 12h - 01h</p>
+                    <p>Domingo: 12h - 22h</p>
+                    <p>Feriados: Consultar</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>📍 Av. Paulista, 1578<br>São Paulo - SP</p>
+                    <p>📞 (11) 3456-7890</p>
+                    <p>✉️ contato@lacouronneroyale.com.br</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 La Couronne Royale. Todos os direitos reservados.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Política de Privacidade</a>
+                    <span>|</span>
+                    <a href="#">Termos de Uso</a>
+                    <span>|</span>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
